@@ -1,0 +1,103 @@
+/* Main container */
+.calendar-main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar header */
+.calendar-main h2 {
+  color: #2a4365;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* React Calendar overrides */
+.react-calendar {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.react-calendar__navigation button {
+  color: #2b6cb0;
+  font-weight: bold;
+}
+
+.react-calendar__tile--now {
+  background: #f6ad55;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: #4299e1;
+  color: white;
+}
+
+.react-calendar__tile:hover {
+  background: #ebf8ff;
+}
+
+/* Selected date section */
+.selected-date {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.selected-date h3 {
+  color: #2c5282;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #bee3f8;
+}
+
+/* Appointments list */
+.selected-date ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.selected-date li {
+  background: #ebf8ff;
+  padding: 0.8rem 1rem;
+  margin: 0.75rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #3182ce;
+  color: #2b6cb0;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.selected-date li:hover {
+  background: #bee3f8;
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .calendar-main {
+    padding: 1rem;
+    border-radius: 0;
+  }
+  
+  .react-calendar {
+    font-size: 0.9rem;
+  }
+  
+  .selected-date {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+}
